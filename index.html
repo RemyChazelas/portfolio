@@ -3,35 +3,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Rémy Chazelas's Portfolio</title>
   </head>
 
   <body>
     <div class="wrapper">
       <nav>
-        <h1>Rémy Chazelas</h1>
+        <h1><span class="letter">R</span>émy</h1>
         <ul>
           <li><a href="#home" onClick="return false;" class="active">Home</a></li>
           <li><a href="#about" onClick="return false;">About</a></li>
           <li><a href="#portfolio" onClick="return false;">Portfolio</a></li>
           <li><a href="#contact" onClick="return false;">Contact</a></li>
         </ul>
-
         <p>&copy; 2021 Rémy Chazelas</p>
         <a href="https://twitter.com/remyChazelas" rel="noreferrer" class="author">@remyChazelas</a>
       </nav>
       <main>
+        <div class="mousemove"></div>
         <section class="home">
           <div class="avatar">
-            <img src="images/avatar.jpg" />
+            <img src="images/remy.jpg" />
           </div>
           <div class="content">
-            <h2>Who is Justice Beaver?</h2>
+            <h2>Hi, I'm <span class="letter">R</span>émy, <br>web developer.</h2>
             <p>Michael, I like the sound of your voice. You know what I’m going to do? I’m going to buy one million dollars worth of paper products today.</p>
-            <ul>
+            <div class="menu">
+              <input type="checkbox" id="toggle">
+              <label for="toggle" id="show-menu">
+              <div class="btn">
+                <i class="material-icons md-36 toggleBtn menuBtn">menu</i>
+                <i class="material-icons md-36 toggleBtn closeBtn">close</i>
+              </div>
+              <div class="btn"><i class="material-icons md-36">photo_camera</i></div>
+              <div class="btn"><i class="material-icons md-36">photo</i></div>
+              <div class="btn"><i class="material-icons md-36">cloud</i></div>
+            </label>
+            </div>
+            <!-- <ul>
               <li>
                 <a href="https://github.com/RemyChazelas" rel="noreferrer">
-                  <svg xmlns="https://raw.githubusercontent.com/simple-icons/simple-icons/c5359309d97b2366664484d90ea9e8a8956f28f4/icons/github.svg" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512">
+                  <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512">
                     <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z">
                     </path>
                   </svg>
@@ -84,7 +97,7 @@
                   </svg>
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </div>
         </section>
         <section class="about">

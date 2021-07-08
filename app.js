@@ -1,6 +1,13 @@
+const mousemove = document.querySelector(".mousemove");
+
+window.addEventListener("mousemove", (e) => {
+  mousemove.style.left = e.pageX + "px";
+  mousemove.style.top = e.pageY + "px";
+});
+
 function onClickNavHandler() {
   for (const link of document.querySelectorAll("nav li a")) {
-    link.addEventListener('click', function(event) {
+    link.addEventListener('click', function (event) {
       // hide all containers
       document.querySelectorAll("nav li a")
         .forEach(el => document.querySelector(`.${el.getAttribute('href').substring(1)}`).style.display = 'none');
@@ -19,3 +26,4 @@ function onClickNavHandler() {
 }
 
 onClickNavHandler();
+
