@@ -494,19 +494,19 @@ color: #9d59d9;
 }
 
 input#toggle:checked ~ #show-menu .btn:nth-child(2) {
-  top: -50px;
   opacity: 1;
+  left: -150px;
+
 }
 
 input#toggle:checked ~ #show-menu .btn:nth-child(3) {
-  top: -50px;
   left: -50px;
   opacity: 1;
 }
 
 input#toggle:checked ~ #show-menu .btn:nth-child(4) {
-  top: 50px;
   opacity: 1;
+  right: 50px;
 }
 
 .menuBtn,.closeBtn{
